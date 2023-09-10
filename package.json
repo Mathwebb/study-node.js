@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-trader-api",
+  "version": "1.0.0",
+  "description": "API HTTP para gerenciar itens do banco de dados Tailwind Traders",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "api",
+    "database"
+  ],
+  "author": "Math",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
