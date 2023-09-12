@@ -1,10 +1,28 @@
-const { fibonacci } = require("./utils/fibonnaci");
-const { runSalesTotal } = require("./utils/sales-files-total");
+// const { fibonacci } = require("./utils/fibonnaci");
+// const { runSalesTotal } = require("./utils/sales-files-total");
 
-async function main(){
-    const result = fibonacci(5);
-    console.log(result);
-    runSalesTotal();
-}
+const express = require('express');
+const app = express();
+const port = 3000;
 
-main();
+app.get('/', (req, res) => res.send('Hello World!'));
+
+app.get('/products', (req, res) => {
+    const products = [
+        {
+            id: 1,
+            name: "hammer",
+        },
+        {
+            id: 2,
+            name: "screwdriver",
+        },
+        {
+            id: 3,
+            name: "wrench",
+        },
+    ];
+    return res.json(products);
+});
+
+app.listen(port, () => console.log(`Example app listening on port ${port}! http://localhost:${port}/`));

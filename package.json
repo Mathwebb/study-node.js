@@ -4,7 +4,8 @@
   "description": "API HTTP para gerenciar itens do banco de dados Tailwind Traders",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "node ./src/app.js",
+    "start:client": "node ./src/client.js",
     "test": "jest"
   },
   "keywords": [
